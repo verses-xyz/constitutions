@@ -1,0 +1,86 @@
+import PageLayout from '../components/PageLayout'
+import Header from '../components/Header'
+
+<Header title="Concerning the Growth of a Constitution" />
+
+### Introduction
+
+A constitution, like an orchard of apples, requires diligent cultivation to yield fruit. Just as the crop cannot take root in the soil without water, a constitution cannot be adopted without the consideration and acceptance of its community. 
+
+We have gathered below the insights of many designers of constitutions past. This guidance is separated into those social aspects that concern the crafting of a digital constitution; that is, how to collect and guide the common attention, as well as the material aspects of the constitution; a suggestion for the eventual shape and form that a constitution ought to possess.
+
+The following proposals arise both from the suggestion of constitution authors from such organizations as ENS, TEC, and DAOhaus. They are further informed by our collection of constitutions.
+
+May the lessons of the past continue to guide the growth of the future.
+
+### Social Processes in the Creation of a Constitution
+
+Principles:
+Establish a constitution at the beginning of the organization
+Draft in stages. For example, the following procedure was inspired by the Token Engineering Commons constitution process:
+Allocate initial responsibility for draft to a small core group of between one and three persons
+Share the initial draft with a small number of individuals and incorporate their changes
+Share the secondary draft more broadly and give time for the greater commons to respond
+Include ratification procedures
+Define important terms through careful exposition or through examples.
+Establish a record of changes to the constitutions
+
+[Pull quotes from the ENS, TEC, DAOhaus surveys?]
+
+### Processes in Crafting the Content of the Constitution
+
+Principles:
+Digital. The constitution should be accessible at a URI and stored in an accessible digital format.
+Hyperlinked. The constitution should contain hyperlinks, especially links to any smart contracts or web platforms important to the community. 
+Amendable. There is an accessible, transparent process for amending or changing the constitution. This does not mean that you need an article specifying how amendments work.
+Short. The constitution of an online community is neither. An online community is not a nation. Who’s going to pay attention? Book of laws rather than a constitution.
+Maximally revelatory. It should be a cross between a blog post and a legal charter. [Suggest ordering of articles?]
+Early. Ref. Nick’s suggestion.
+
+### Proposed Template
+
+```md
+## Preamble
+<!-- The preamble introduces the community / DAO, its goals, and its values. We recommend focusing on just the 2-3 values and 2-3 goals that really matter. -->
+
+## Article 1: <Title>
+<!-- Each article of the constitution should respond to the values and goals articulated in the preamble. Each article should address an important issue, policy, institution, or right. Ask yourself: if you had only five articles, would I specify this right or this policy?
+
+National constitutions typically don’t articulate policy within a constitution; rather, they describe the institutions that shape policies. Many DAOs, like other online communities, do not need  There are good reasons for taking this approach, but many online communities do not need.
+
+Constitutions anchor a DAO’s off-chain governance.
+
+E.g. all decisions will be made by GitcoinDAO via this contract. -->
+
+## Article 2:
+
+## Article 3:
+
+## Article 4:
+
+## Article 5:
+<!-- We recommend restricting constitutions to five or fewer articles. Additional articles can be added through amendments. This is also a good opportunity to practice going through the amendment process! -->
+
+<!-- We encourage community to supply the following JSON-LD metadata as a comment directly in the constitution’s .md file or as a constitution.json file in the same folder as the constitution. -->
+<!-- 
+{ 
+"@context": "https://www.metagov.org" 
+"type": "constitution",
+"address": 
+{
+"type": "EthereumAddress",
+"address": <address>
+},
+"dateCreated": <DD-MM-YYYY>,
+"dateModified": <DD-MM-YYYY>,
+"previousConstitutionURI": <URI>,
+"inForce": <True, False>
+}
+-->
+```
+
+
+
+For further reading, see Richard Bartlett’s Handbook of Handbooks for Decentralized Organizing.
+
+export default PageLayout

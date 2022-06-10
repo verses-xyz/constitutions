@@ -36,3 +36,8 @@ a {
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
 }
+
+pre, code {
+  font-size: 0.9rem !important;
+  white-space: pre-wrap;
+}
