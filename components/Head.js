@@ -17,7 +17,7 @@ export default function HeadComponent() {
     <meta property="og:title" content={TITLE} />
     <meta property="og:description"
       content={DESC} />
-
+    <meta property="og:image" content="/og-image.png" />
     <meta name="twitter:card" content="summary" />
   </Head>
 }
