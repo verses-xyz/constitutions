@@ -6,6 +6,7 @@ const LINKS = [
   { label: "Article", href: "/article" },
   { label: "Constitutions", href: "/constitutions" },
   { label: "Guide", href: "/guide" },
+  { label: "Template", href: "/template" }
 ]
 
 export default function Sidebar() {

@@ -1,4 +1,6 @@
-# interdependence-web
+# Web3 Constitutions 
+
+> https://constitutions.vercel.app/
 
 Running the application locally:
 
