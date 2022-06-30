@@ -12,7 +12,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.4.0",
-    "react-markdown": "^7.1.2"
+    "react-loading-iframe": "^1.1.0",
+    "react-markdown": "^7.1.2",
+    "react-spinners": "^0.13.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
