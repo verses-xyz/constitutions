@@ -1,11 +1,3 @@
-import PageLayout from '../components/PageLayout'
-import Header from '../components/Header'
-import Template from '../public/template.md'
-import Button from '../components/core/Button'
-
-<Header title="A Constitutional Template" />
-
-```md
 # Constitutional Template
 by Metagov
 
@@ -46,9 +38,3 @@ E.g. all decisions will be made by GitcoinDAO via this contract. -->
 "inForce": <True, False>
 }
 -->
-
-```
-
-<Button><a href="/template.md" download>Download Template</a></Button>
-
-export default PageLayout
