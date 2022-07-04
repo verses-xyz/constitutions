@@ -4,7 +4,11 @@ import Footnote from '../components/Footnote'
 
 <Header title="Constitutions of Web3" />
 
-[Introduction](#introduction), [Part I: Digital Constitutionalism and Web3](#part-i-digital-constitutionalism-and-web3)
+[Introduction](##introduction);
+[Part I: Digital Constitutionalism and Web3](#part-i:-digital-constitutionalism-and-web3);
+[Part II: Analyzing DAO Constitutions](#part-ii:-analyzing-dao-constitutions); 
+[Part III: Writing DAO Constitutions](#part-iii:-writing-dao-constitutions); 
+[Part IV: Towards Digital Constitutionalism](#part-iv:-towards-computational-constitutionalism)
 
 ### Abstract
 The governance of online communities has been a critical issue since the first USENET groups, and a number of serious constitutions—declarations of goals, values, and rights—have emerged since the mid-1990s. More recently, decentralized autonomous organizations (DAOs) have begun to publish their own constitutions, manifestos, and other governance documents. 
@@ -138,7 +142,7 @@ As the social and technical infrastructure around digital governance improves, w
 
 ### Part III: Writing DAO constitutions
 
-In this section, we make a set of practical recommendations on how to draft DAO constitutions in order to maximize their use and relevance in governance. In particular, we recommend that constitutions be digital, amendable, short, expository, and early.
+In this section, we make a set of practical recommendations on how to draft DAO constitutions in order to maximize their use and relevance in governance. In particular, we recommend that constitutions be *digital*, *amendable*, *short*, *expository*, and *early*.
 
 1. **Digital.** The constitution should be accessible at a URI, stored in an accessible digital format such as a .md or .txt file, and make use of hyperlinks, especially links to any example policies, smart contracts, digital platforms, or other DAOs relevant to the community.
 2. **Amendable.** There is an accessible, transparent process for amending or changing the constitution. Often, but not always, this means having a section dedicated to amendment procedures.
@@ -146,12 +150,43 @@ In this section, we make a set of practical recommendations on how to draft DAO 
 4. **Expository.** Each goal, value, or right should come with enough context and exposition, often through an example, so that any member of the community can grasp the concept.
 5. **Early.** Constitutions should be written and promulgated at the beginning of an organization or community’s creation.
 
-These recommendations are based on a series of interviews with the drafters of DAO constitutions, including those from DAOhaus, the Ethereum Name Service (ENS), and the Token Engineering Commons (TEC), and on the empirical practices analyzed in Part II. Along with these recommendations, we provide a template constitution along with a forkable code repository to help DAOs draft and maintain such constitutions.
+These recommendations are based on a series of interviews with the drafters of DAO constitutions, including those from DAOhaus, the Ethereum Name Service (ENS), and the Token Engineering Commons (TEC), and on the empirical practices analyzed in Part II. Along with these recommendations, we provide a [template](/template) along with a forkable code repository to help DAOs draft and maintain such constitutions.
 
-#### Rationale
+### Part IV: Towards Computational Constitutionalism
 
-Communities publish constitutions, manifestos, and governance documents for many reasons. But constitutions, distinct from the typical manifesto which may only articulate goals and values, typically serve a functional purpose within a community, e.g. establishing rights and limiting the exercise of power. Whatever the goals, values, and rights they articulate, we believe that constitutions are meant to be used in governance in some way that connects with and validates those goals, values, and rights. By contrast, it is very, very common to publish a constitution and then to have it ignored in practice—whether because it is over-theorized or too far ahead of practice—while those with de facto power make decisions.
+A digital constitution, extending Redeker et al.’s definition, is a text that articulates a set of political rights, governance norms, and limitations on the exercise of power within an online community. So far, we have created a data set of digital constitutions (among other governance documents) of DAOs and related Web3 entities, coded the goals, values, and rights present in these texts, identified their major functions and themes, and made several recommendations for useful constitutions based on our findings. But as we noted in the introduction, DAOs are defined by their usage of smart contracts. These smart contracts are *computational constitutions* insofar as they encode rights, norms, and limitations on the exercise of power within the DAO (Zargham et al. 2020)<Footnote topOffset={0} data="Note that not all smart contracts fulfill this function, even within the contract space of a DAO."></Footnote>. We refer to the broader pattern of using computational artifacts to encode constitutional rights and processes as *computational constitutionalism*.
 
+#### Relating digital and computational constitutions
 
+While there are clear patterns across digital constitutions (and we have proposed a template in Part III), those texts are still relatively bespoke to the communities that write them. In contrast, the smart contracts used by most DAOs are not bespoke; the specialized technical knowledge required to write functional and secure smart contracts precludes most DAOs from creating theirs from scratch. As a result, a number of templates and "DAO factories", produced by external organizations, have emerged to help DAO creators deploy the core smart contracts of a DAO with a specified set of configurable parameters. The distribution of templates used by DAOs in our dataset is shown below<Footnote topOffset={0} data="Of the DAOs we studied, only Effect DAO has developed a custom governance framework rather than deploy an instance of an externally-developed framework."></Footnote>.
+
+![On Chain components](./on_chain_components.png)
+
+Much work remains to be done to understand the relationship between these smart contracts and “off-chain” institutional constructs such as a constitution. While smart contracts neither need nor assume constitutions (and vice versa), *the value of understanding DAOs through the lens of computational constitutionalism is to see how certain rights and certain forms of governance can be more easily and effectively provided by a smart contract, by a constitution (and constitutional norms), or by some combination of the two.* As we have seen, the textual constitutions commonly articulate rights already guaranteed by the smart contracts, including proposal creation and proposal dispute as well as voting, veto, and exit. But to what extent *should* constitutions reference the smart contract? In what cases should a written constitution or charter defer to the contract, and in what cases should the contract defer to the constitution? 
+
+To understand how governance smart contracts function on their own and in conjunction with textual constitutions or other governance documents and processes, we must investigate three distinct data sets:
+
+1. the rights and affordances defined within the template smart contracts, 
+2. the parameter configurations with which DAOs have chosen to deploy their own computational governance systems from template smart contracts, and 
+3. the resulting governance activity circumscribed by the smart contracts. 
+
+These data sets will allow us to investigate what framework designers have considered necessary and sufficient to implement governance on a blockchain, what DAOs leaders have considered necessary and desirable to implement governance on a blockchain, and what governance actions DAO members actually take within the constraints of the governance configuration. Ultimately, understanding these will allow for the creation of theoretical frameworks and practical tools for design and configuration patterns in the computational governance of online communities. 
+
+We defer a detailed analysis of the parameters and behavior of the smart contracts themselves to future work.
+
+#### Future work
+
+Beyond analyzing smart contracts, there is still much work to be done to expand the dataset of textual documents and to contextualize their creation and use. We hope to continue building our dataset not only by lowering the friction of contributing data but also by automating certain aspects of data collection, especially through improvements to our template or to the associated tools and widgets in the code repository.
+
+Additionally, further information is needed to understand the relationship between the structure and contents of a textual constitution and its observed usage in governing a community. For what audiences was the constitution written, and how does its publishing location relate to these? What are the processes by which the constitution was created, and who was involved in its drafting and revision? In what ways and with what frequency is the constitution being referenced and revisited by the community it governs? 
+
+### Bibliography
+
+Davies, T. (2014). Digital Rights and Freedoms: A Framework for Surveying Users and Analyzing Policies. In L. M. Aiello & D. McFarland (Eds.), Social Informatics: 6th International Conference, SocInfo 2014, Barcelona, Spain, November 11-13, 2014. Proceedings (pp. 428–443). Springer International Publishing. https://doi.org/10.1007/978-3-319-13734-6_31
+
+Redeker, D., Gill, L., & Gasser, U. (2018). Towards digital constitutionalism? Mapping attempts to craft an Internet Bill of Rights. International Communication Gazette, 80(4), 302–319. https://doi.org/10/gdk37x
+Schneider, N. (2019). Decentralization: An incomplete ambition. Journal of Cultural Economy, 12(4), 265–285. https://doi.org/10/ggf7m3
+
+Star, S. L., & Griesemer, J. R. (1989). Institutional Ecology, `Translations’ and Boundary Objects: Amateurs and Professionals in Berkeley’s Museum of Vertebrate Zoology, 1907-39. Social Studies of Science, 19(3), 387–420. https://doi.org/10.1177/030631289019003001
 
 export default PageLayout
