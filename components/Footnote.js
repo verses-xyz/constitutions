@@ -36,11 +36,11 @@ export default function Footnote({
       {expanded && (
         <div className={`footnote-content-mobile`}>
           <button
-            className="absolute"
-            style={{ top: "var(--space-12)", right: "var(--space-12)" }}
+            className="absolute pointer-events-none"
+            style={{ top: "0.5em", right: "0.5em" }}
             onClick={toggle}
           >
-            <IoMdClose color="var(--foreground-default)" />
+            <IoMdClose color="#555" />
           </button>
           {data}
         </div>
