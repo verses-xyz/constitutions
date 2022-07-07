@@ -6,7 +6,7 @@ import { IoIosMenu } from "react-icons/io";
 const LINKS = [
   { label: "Introduction", href: "/" },
   { label: "Analysis of Constitutions", href: "/article" },
-  { label: "Guide to Creating Constitutions", href: "/guide" },
+  { label: "Creating Constitutions", href: "/guide" },
   { label: "Template for Constitutions", href: "/template" }
 ]
 
