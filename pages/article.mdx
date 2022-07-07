@@ -4,11 +4,13 @@ import Footnote from '../components/Footnote'
 
 <Header title="Constitutions of Web3" />
 
+
 - [Introduction](#introduction)
 - [Part I: Digital Constitutionalism and Web3](#part-i-digital-constitutionalism-and-web3)
 - [Part II: Analyzing DAO Constitutions](#part-ii-analyzing-dao-constitutions)
-- [Part III: Towards Digital Constitutionalism](#part-iii-towards-computational-constitutionalism)
+- [Part III: Towards Computational Constitutionalism](#part-iii-towards-computational-constitutionalism)
 
+*You can also find a formatted pdf of the paper here.*
 
 ### Abstract
 The governance of online communities has been a critical issue since the first USENET groups, and a number of serious constitutions—declarations of goals, values, and rights—have emerged since the mid-1990s. More recently, decentralized autonomous organizations (DAOs) have begun to publish their own constitutions, manifestos, and other governance documents. 
@@ -27,21 +29,24 @@ A decentralized autonomous organization, or DAO, is an online community partly o
 
 Smart contracts mark a departure from traditional governance documents. Traditional documents such as textual constitutions or policy statements can have strongly associated norms, however smart contracts will directly enforce rules. For example, if xDAO creates a smart contract that requires at least five people to approve a proposal, all proposals to xDAO with less than five people will be automatically rejected.
 
-Although smart contracts are promising and increasingly important, they alone cannot govern communities; traditional constitutions and declarations of rights are still crucial for good governance. First, rights within smart contracts tend to only be relevant for a small set of transactions, each of which requires <Footnote topOffset={0} data="Though many transactions may link to richer content formats such as discussion posts.">highly legible data</Footnote>. Currently, it is neither feasible nor (arguably) desirable to include all norms within smart contracts. Second, even when rights can be incorporated within smart contracts, doing so renders them illegible to those participants who cannot read the code within the smart contract. In other words, rights in smart contracts also need to be articulated with accompanying texts. 
+**Although smart contracts are promising and increasingly important, they alone cannot govern communities; traditional constitutions and declarations of rights are still crucial for good governance.** First, rights within smart contracts tend to only be relevant for a small set of transactions, each of which requires <Footnote topOffset={0} data="Though many transactions may link to richer content formats such as discussion posts.">highly legible data</Footnote>. Currently, it is neither feasible nor (arguably) desirable to include all norms within smart contracts. Second, even when rights can be incorporated within smart contracts, doing so renders them illegible to those participants who cannot read the code within the smart contract. In other words, rights in smart contracts also need to be articulated with accompanying texts. 
 
 
-This essay aims (1) to understand and contextualize the usage of written constitutions and smart contracts within the emerging politics of DAOs, and (2) to analyze these textual documents in their own right in service of (3) developing a stable set of principles and practices for future DAO constitutions.
+This essay aims 
+1. to understand and contextualize the usage of written constitutions and smart contracts within the emerging politics of DAOs 
+2. to analyze these textual documents in their own right
+3. to develop a stable set of principles and practices for future DAO constitutions.
 
 The paper proceeds in four parts. In Part I, we review the history of digital constitutionalism on the internet. In Part II, we describe the rights, values, and goals of constitutions of Web3 and analyze some of the stylistic and political patterns we found. In Part III, we present recommendations, along with a technical publication standard, for future DAO and Web3 constitutions. Finally, in Part IV, we identify future directions for this research, focusing on work to analyze existing governance smart contracts to understand the types of rights and affordances that have (and have not) been written into them.
 
 
 ## Part I: Digital Constitutionalism and Web3
 
-The early internet hosted a number of notable constitutions and governance proposals. For example, Redeker, Gil, and Gasser (Redeker et al., 2018) collected and analyzed an extraordinary collection of constitutions and manifestos over the history of the internet, ranging from the early Rights and Responsibilities of Electronic Learners in 1992 to 2014’s Magna Carta for Philippine Internet Freedom. They describe digital constitutionalism as “a constellation of initiatives that have sought to articulate a set of political rights, governance norms, and limitations on the exercise of power on the Internet” (Redeker et al., 2018, p. 2).
+The early internet hosted a number of notable constitutions and governance proposals. For example, Redeker, Gil, and Gasser (Redeker et al., 2018) collected and analyzed an extraordinary collection of constitutions and manifestos over the history of the internet, ranging from the early *Rights and Responsibilities of Electronic Learners* in 1992 to 2014’s *Magna Carta for Philippine Internet Freedom*. They describe digital constitutionalism as “a constellation of initiatives that have sought to articulate a set of political rights, governance norms, and limitations on the exercise of power on the Internet” (Redeker et al., 2018, p. 2).
 
 Redeker et al.’s data set focuses on constitutions that assert rights and norms over the entire internet and/or key aspects of its infrastructure. Despite their emphasis on rights, most of these documents can be better understood as political declarations rather than as authoritative governance documents. By contrast, online communities throughout the history of the internet have enacted their own constitutions, which are more comparable to the governance documents of neighborhood associations or the charters of corporations. For example, early USENET groups (similar to many forum-based communities today) often posted a charter that described the intention and governance of that community<Footnote topOffset={0} data={<span>See <a href="https://web.archive.org/web/20220704170213/https://www.newsdemon.com/charter-directory">https://web.archive.org/web/20220704170213/https://www.newsdemon.com/charter-directory</a></span>}></Footnote>, and open-source software communities such as Python have adopted [similar governance procedures](https://peps.python.org/pep-0013/) that articulate the rules and expectations for participating in these communities in comprehensive detail.
 
-More recently, the development of blockchains and other cryptographic protocols have enabled the rise of a series of services and platforms collectively referred to as Web3. These technologies revolve around trustless mechanisms for social, economic, and political coordination. Many proponents of Web3 like to emphasize that typical forms of human governance (such as votes and constitutions) are not necessary or even desirable in Web3 communities<Footnote topOffset={0} data={<span> This view—nicknamed “code is law” within the Web3 community—is closely associated with Nick Szabo and other early pioneers in the space. See for, instance, Szabians in  <a href="https://metagov.org/cryptopolitics/types/">Metagov's cryptopolitics survey</a></span>}></Footnote>. Other proponents of Web3 emphasize the importance of maintaining human-human mediation in addressing coordination problems<Footnote topOffset={0} data={<span> See, e.g.,  <a href="https://medium.com/cryptolawreview/against-szabos-law-for-a-new-crypto-legal-system-d00d0f3d3827">Zamfir contra Szabo.</a></span>}></Footnote>. Despite the range of perspectives on how governance is best done, it is clear that group coordination requires shared goals and values. Constitutions can thus be understood as an interface for a community’s shared values.
+More recently, the development of blockchains and other cryptographic protocols have enabled the rise of a series of services and platforms collectively referred to as Web3. These technologies revolve around trustless mechanisms for social, economic, and political coordination. Many proponents of Web3 like to emphasize that typical forms of human governance (such as votes and constitutions) are not necessary or even desirable in Web3 communities<Footnote topOffset={0} data={<span> This view—nicknamed “code is law” within the Web3 community—is closely associated with Nick Szabo and other early pioneers in the space. See for, instance, Szabians in  <a href="https://metagov.org/cryptopolitics/types/">Metagov's cryptopolitics survey</a></span>}></Footnote>. Other proponents of Web3 emphasize the importance of maintaining human-human mediation in addressing coordination problems<Footnote topOffset={0} data={<span> See, e.g.,  <a href="https://medium.com/cryptolawreview/against-szabos-law-for-a-new-crypto-legal-system-d00d0f3d3827">Zamfir contra Szabo.</a></span>}></Footnote>. Despite the range of perspectives on how governance is best done, it is clear that group coordination requires shared goals and values. **Constitutions can thus be understood as an interface for a community’s shared values.**
 
 Decentralized autonomous organizations, or DAOs, have become an increasingly prominent form of digital institution in Web3. While the term is used differently in different communities, all DAOs embody certain institutional rules within code. 
 
@@ -170,11 +175,17 @@ Additionally, further information is needed to understand the relationship betwe
 
 ### Bibliography
 
+Campbell, J. (1949). The Hero with a Thousand Faces. New World Library.
+
 Davies, T. (2014). Digital Rights and Freedoms: A Framework for Surveying Users and Analyzing Policies. In L. M. Aiello & D. McFarland (Eds.), Social Informatics: 6th International Conference, SocInfo 2014, Barcelona, Spain, November 11-13, 2014. Proceedings (pp. 428–443). Springer International Publishing. https://doi.org/10.1007/978-3-319-13734-6_31
 
+Elkins, Z., Ginsburg, T., & Melton, J. (2010). The Comparative Constitutions Project: A Cross-National Historical Dataset of Written Constitutions. 170.
+
 Redeker, D., Gill, L., & Gasser, U. (2018). Towards digital constitutionalism? Mapping attempts to craft an Internet Bill of Rights. International Communication Gazette, 80(4), 302–319. https://doi.org/10/gdk37x
+
 Schneider, N. (2019). Decentralization: An incomplete ambition. Journal of Cultural Economy, 12(4), 265–285. https://doi.org/10/ggf7m3
 
 Star, S. L., & Griesemer, J. R. (1989). Institutional Ecology, `Translations’ and Boundary Objects: Amateurs and Professionals in Berkeley’s Museum of Vertebrate Zoology, 1907-39. Social Studies of Science, 19(3), 387–420. https://doi.org/10.1177/030631289019003001
+
 
 export default PageLayout

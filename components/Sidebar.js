@@ -5,10 +5,9 @@ import { IoIosMenu } from "react-icons/io";
 
 const LINKS = [
   { label: "Introduction", href: "/" },
-  { label: "Article", href: "/article" },
-  { label: "Constitutions", href: "https://airtable.com/shr5r9t19gfW7YYPs/tbltBIhUFqZE1tfle" },
-  { label: "Guide", href: "/guide" },
-  { label: "Template", href: "/template" }
+  { label: "Analysis of Constitutions", href: "/article" },
+  { label: "Guide to Creating Constitutions", href: "/guide" },
+  { label: "Template for Constitutions", href: "/template" }
 ]
 
 export default function Sidebar() {
