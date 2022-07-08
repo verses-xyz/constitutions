@@ -31,9 +31,10 @@ export default function Sidebar() {
 
   const bg = open ? "bg-gray-wash border-r border-gray" : ""
 
-  return <div className={`h-[100vh] z-[9999] flex flex-col fixed justify-center font-body text-xl px-36 xl:bg-transparent xl:border-none ${bg}`}>
+  console.log(open)
+  return <div className={`h-[100vh] z-[9999] flex flex-col fixed justify-center font-body text-xl xl:bg-transparent xl:border-none ${bg}`}>
     <IoIosMenu className="absolute left-0 top-0 m-8 xl:hidden block cursor-pointer" size={40} onClick={() => setOpen(state => !state)} />
-    <div className={open ? "" : "hidden"}>
+    <div className={open ? "px-32" : "hidden pointer-events-none"}>
       <h2 className="font-bold">Table of Contents</h2>
       <ol className="list-[upper-roman] ml-4 my-4">
         {LINKS.map((link, i) => <li key={i} className="my-2">
