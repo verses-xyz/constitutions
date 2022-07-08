@@ -4,7 +4,7 @@ function capitalizeFirstLetter(string) {
 
 export default function Header({ title }) {
   const title_class = "flex flex-wrap justify-center gap-x-2 inline-block text-4xl font-title mt-16 mb-16 md:mb-20 md:text-7xl font-semibold text-gray-primary";
-  const lower_class = "inline-block font-light italic -mb-5 md:-mb-1 mt-1 md:mt-3 text-xl md:text-3xl text-gray-primary";
+  const lower_class = "inline-block font-light italic -mb-5 mt-3 text-xl md:text-3xl text-gray-primary";
   const concat = title
     .split(" ")
     .map(word => {

@@ -141,12 +141,9 @@ p:hover .footnote-content {
   inset-inline-end: -1.5rem;
 }
 
-.footnote-content-left {
-  left: 5%;
-}
-
 .footnote-content-right {
-  right: 5%;
+  right: 0;
+  transform: translateX(350px);
 }
 
 .footnote-content::before {
