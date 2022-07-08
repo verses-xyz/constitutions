@@ -146,7 +146,7 @@ p:hover .footnote-content {
 }
 
 .footnote-content-right {
-  right: 5%;
+  right: 10%;
 }
 
 .footnote-content::before {
