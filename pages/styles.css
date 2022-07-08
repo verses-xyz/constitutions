@@ -168,7 +168,7 @@ p:hover .footnote-content {
   display: none;
 }
 
-@media only screen and (max-width: 1650px) {
+@media only screen and (max-width: 1280px) {
   .footnote {
     cursor: pointer;
     position: relative;
