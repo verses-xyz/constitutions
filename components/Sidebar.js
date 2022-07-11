@@ -6,10 +6,10 @@ import useOutsideClick from "../hooks/useOutsideClick"
 
 const LINKS = [
   { label: "Introduction", href: "/" },
-  { label: "Analysis", href: "/article" },
+  { label: "Essay", href: "/article" },
+  { label: "Constitutions", href: "https://github.com/metagov/constitution-template/tree/main/constitutions"},
   { label: "Guide", href: "/guide" },
-  { label: "Template", href: "/template" },
-  { label: "Dataset", href: "https://airtable.com/shr5r9t19gfW7YYPs/tbltBIhUFqZE1tfle"}
+  { label: "Template", href: "/template" }
 ]
 
 export default function Sidebar() {
