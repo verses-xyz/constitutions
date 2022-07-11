@@ -201,7 +201,7 @@ p:hover .footnote-content {
   .footnote {
     position: initial;
   }
-  article > p {
+  .prose > p {
     position: relative;
   }
   .footnote-content {
