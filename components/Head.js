@@ -30,6 +30,6 @@ export default function HeadComponent() {
     <meta property="twitter:url" content="https://constitutions.metagov.org/" />
     <meta property="twitter:title" content="Constitutions of Web3" />
     <meta property="twitter:description" content="Smart contracts are promising tools for governing DAOs but they alone aren't enough. In this artifact, we describe how written constitutions are an interface for a community’s shared values and must complement programmatic tools like smart contracts." />
-    <meta property="twitter:image" content="/og-image.png" />
+    <meta property="twitter:image" content="https://constitutions.metagov.org/og-image.png" />
   </Head>
 }
