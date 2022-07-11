@@ -19,5 +19,17 @@ export default function HeadComponent() {
       content={DESC} />
     <meta property="og:image" content="/og-image.png" />
     <meta name="twitter:card" content="summary" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://constitutions.metagov.org/" />
+    <meta property="og:title" content="Constitutions of Web3" />
+    <meta property="og:description" content="Smart contracts are promising tools for governing DAOs but they alone aren't enough. In this artifact, we describe how written constitutions are an interface for a community’s shared values and must complement programmatic tools like smart contracts." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://constitutions.metagov.org/" />
+    <meta property="twitter:title" content="Constitutions of Web3" />
+    <meta property="twitter:description" content="Smart contracts are promising tools for governing DAOs but they alone aren't enough. In this artifact, we describe how written constitutions are an interface for a community’s shared values and must complement programmatic tools like smart contracts." />
+    <meta property="twitter:image" content="/og-image.png" />
   </Head>
 }
