@@ -7,7 +7,7 @@ import useOutsideClick from "../hooks/useOutsideClick"
 const LINKS = [
   { label: "Introduction", href: "/" },
   { label: "Essay", href: "/article" },
-  { label: "Constitutions", href: "https://github.com/metagov/constitution-template/tree/main/constitutions"},
+  { label: "Constitutions", href: "https://github.com/metagov/constitution-template/tree/main/constitutions" },
   { label: "Guide", href: "/guide" },
   { label: "Template", href: "/template" }
 ]
@@ -29,7 +29,7 @@ export default function Sidebar() {
   ) ? 'bg-gray-hover' : 'bg-gray-wash'
 
   const handleResize = () => {
-    setOpen(window.innerWidth > 1280)
+    setOpen(window.innerWidth >= 1280)
   }
 
   useEffect(() => {
